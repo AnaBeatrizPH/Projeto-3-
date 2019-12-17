@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-0"></div>
+        <div class="col-md-12">
+            <div>
+                <table border = "2">
+                <tr *ngFor=" let item of users">
+                    <td> <b>ID:</b> {{item.id}}</td>
+                    <td> <b>Name:</b> {{item.name}}</td>
+                    <td> <b>Username:</b> {{item.username}}</td>
+                    <td> <b>Street:</b> {{item.address.street}}</td>
+                    <td> <b>Suite:</b> {{item.address.suite}}</td>
+                    <td> <b>City:</b> {{item.address.city}}</td>
+                    <td> <b>Zipcode:</b> {{item.address.zipcode}}</td>
+                    <td> <b>Latitude:</b> {{item.address.geo.lat}}</td>
+                    <td> <b>Longitude:</b> {{item.address.geo.lng}}</td>
+                    <td><b>WebSite:</b> {{item.website}}</td>
+                    <td><b>Company:</b> {{item.company.name}}</td>
+                    <td><b>Phone:</b> {{item.phone}}</td>
+                </tr> 
+             </table>
+                <div class="col-md-0"></div>
+            </div>
+        </div>
+    </div>
+</div>
